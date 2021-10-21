@@ -37,3 +37,6 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 # Finish
 write_footers
+
+# Overlays
+echo -e "\ninclude vendor/gms/common/overlays.mk" >> $PRODUCTMK
