@@ -14,6 +14,13 @@
 # limitations under the License.
 #
 
+# Artifact path requirement allowlist
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
+    system/etc/permissions/privapp-permissions-google.xml \
+    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
+    system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk
+
 # Gboard Props
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
