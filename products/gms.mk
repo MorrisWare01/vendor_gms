@@ -21,6 +21,12 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
     system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk
 
+# Default sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.alarm_alert=Fresh_start.ogg \
+    ro.config.notification_sound=Eureka.ogg \
+    ro.config.ringtone=Your_new_adventure.ogg
+
 # Gboard Props
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
