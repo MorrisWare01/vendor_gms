@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        product/priv-app/DevicePersonalizationPrebuiltPixel2023/DevicePersonalizationPrebuiltPixel2023.apk | product/priv-app/PrebuiltBugle/PrebuiltBugle.apk | product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk | product/priv-app/Velvet/Velvet.apk | product/app/Photos/Photos.apk |product/app/PrebuiltGmail/PrebuiltGmail.apk)
+            split --bytes=49M -d "$2" "$2".part
+            ;;
         product/overlay/*apk)
             starletMagic $1 $2 &
             ;;
