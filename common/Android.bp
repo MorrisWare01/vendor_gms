@@ -7,3 +7,906 @@ soong_namespace {
 	],
 }
 
+android_app_import {
+	name: "GooglePrintRecommendationService",
+	owner: "gms",
+	apk: "proprietary/system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk",
+	overrides: ["PrintRecommendationService"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "DocumentsUIGoogle",
+	owner: "gms",
+	apk: "proprietary/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk",
+	overrides: ["DocumentsUI"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "GooglePackageInstaller",
+	owner: "gms",
+	apk: "proprietary/system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk",
+	overrides: ["PackageInstaller"],
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "CalculatorGooglePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk",
+	overrides: ["ExactCalculator"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CalendarGooglePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk",
+	overrides: ["Calendar2", "Calendar", "Etar"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Chrome-Stub",
+	owner: "gms",
+	apk: "proprietary/product/app/Chrome-Stub/Chrome-Stub.apk",
+	overrides: ["webview", "Browser2", "Jelly"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DevicePolicyPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/DevicePolicyPrebuilt/DevicePolicyPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "GoogleContacts",
+	owner: "gms",
+	apk: "proprietary/product/app/GoogleContacts/GoogleContacts.apk",
+	overrides: ["Contacts", "Contacts2"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "GoogleTTS",
+	owner: "gms",
+	apk: "proprietary/product/app/GoogleTTS/GoogleTTS.apk",
+	overrides: ["PicoTts"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "LatinIMEGooglePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk",
+	overrides: ["LatinIME"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "LocationHistoryPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Maps",
+	owner: "gms",
+	apk: "proprietary/product/app/Maps/Maps.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MarkupGoogle",
+	owner: "gms",
+	apk: "proprietary/product/app/MarkupGoogle/MarkupGoogle.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "NgaResources",
+	owner: "gms",
+	apk: "proprietary/product/app/NgaResources/NgaResources.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Photos",
+	owner: "gms",
+	apk: "proprietary/product/app/Photos/Photos.apk",
+	overrides: ["Gallery2"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PixelThemesStub",
+	owner: "gms",
+	apk: "proprietary/product/app/PixelThemesStub/PixelThemesStub.apk",
+	overrides: ["ThemePicker"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PixelThemesStub2022_and_newer",
+	owner: "gms",
+	apk: "proprietary/product/app/PixelThemesStub2022_and_newer/PixelThemesStub2022_and_newer.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PixelWallpapers2023",
+	owner: "gms",
+	apk: "proprietary/product/app/PixelWallpapers2023/PixelWallpapers2023.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltDeskClockGoogle",
+	owner: "gms",
+	apk: "proprietary/product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk",
+	overrides: ["DeskClock"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmail",
+	owner: "gms",
+	apk: "proprietary/product/app/PrebuiltGmail/PrebuiltGmail.apk",
+	overrides: ["Email"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SoundPickerPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "TrichromeLibrary-Stub",
+	owner: "gms",
+	apk: "proprietary/product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WallpaperEmojiPrebuilt-v470",
+	owner: "gms",
+	apk: "proprietary/product/app/WallpaperEmojiPrebuilt-v470/WallpaperEmojiPrebuilt-v470.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WebViewGoogle-Stub",
+	owner: "gms",
+	apk: "proprietary/product/app/WebViewGoogle-Stub/WebViewGoogle-Stub.apk",
+	overrides: ["webview"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "AiWallpapers",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/AiWallpapers/AiWallpapers.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DeviceIntelligenceNetworkPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DevicePersonalizationPrebuiltPixel2023",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2023/DevicePersonalizationPrebuiltPixel2023.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "FilesPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/FilesPrebuilt/FilesPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "GoogleDialer",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/GoogleDialer/GoogleDialer.apk",
+	overrides: ["Dialer"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "GoogleOneTimeInitializer",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk",
+	overrides: ["OneTimeInitializer"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "GoogleRestorePrebuilt-v445524",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt-v445524/GoogleRestorePrebuilt-v445524.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PartnerSetupPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Phonesky",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/Phonesky/Phonesky.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PixelLiveWallpaperPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PixelLiveWallpaperPrebuilt/PixelLiveWallpaperPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltBugle",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_AdsDynamite",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_AdsDynamite.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_CronetDynamite",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_CronetDynamite.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_DynamiteLoader",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_DynamiteLoader.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_DynamiteModulesA",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_DynamiteModulesA.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_DynamiteModulesC",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_DynamiteModulesC.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_GoogleCertificates",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_GoogleCertificates.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_MapsDynamite",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_MapsDynamite.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreSc_MeasurementDynamite",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreSc_MeasurementDynamite.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "AndroidPlatformServices",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MlkitBarcodeUIPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/optional/MlkitBarcodeUIPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "VisionBarcodePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/optional/VisionBarcodePrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "RecorderPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/RecorderPrebuilt/RecorderPrebuilt.apk",
+	overrides: ["Recorder"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SafetyHubPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk",
+	overrides: ["EmergencyInfo"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SettingsIntelligenceGooglePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk",
+	overrides: ["SettingsIntelligence"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SetupWizardPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
+	overrides: ["Provision"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Velvet",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/Velvet/Velvet.apk",
+	overrides: ["QuickSearchBox"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WallpaperEffect",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/WallpaperEffect/WallpaperEffect.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WeatherPixelPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/WeatherPixelPrebuilt/WeatherPixelPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WellbeingPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "AccessibilityMenu",
+	owner: "gms",
+	apk: "proprietary/system_ext/app/AccessibilityMenu/AccessibilityMenu.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "EmergencyInfoGoogleNoUi",
+	owner: "gms",
+	apk: "proprietary/system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "GoogleServicesFramework",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "NexusLauncherRelease",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SetupWizardPixelPrebuilt",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SetupWizardPixelPrebuilt/SetupWizardPixelPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "StorageManagerGoogle",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/StorageManagerGoogle/StorageManagerGoogle.apk",
+	overrides: ["StorageManager"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-BigNum",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-BigNum/SystemUIClocks-BigNum.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-Calligraphy",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-Calligraphy/SystemUIClocks-Calligraphy.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-Flex",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-Flex/SystemUIClocks-Flex.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-Growth",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-Growth/SystemUIClocks-Growth.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-Inflate",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-Inflate/SystemUIClocks-Inflate.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-Metro",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-Metro/SystemUIClocks-Metro.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-NumOverlap",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-NumOverlap/SystemUIClocks-NumOverlap.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SystemUIClocks-Weather",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/SystemUIClocks-Weather/SystemUIClocks-Weather.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WallpaperPickerGoogleRelease",
+	owner: "gms",
+	apk: "proprietary/system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk",
+	overrides: ["ThemePicker", "WallpaperPicker", "WallpaperPicker2", "WallpaperCropper"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.google.android.dialer.support",
+	owner: "gms",
+	jars: ["proprietary/product/framework/com.google.android.dialer.support.jar"],
+	product_specific: true,
+}
+
