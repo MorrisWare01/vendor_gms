@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
     PixelContactsProvider \
     GoogleConfigOverlay \
     GoogleDeviceLockControllerOverlay \
+    GoogleHealthConnectOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \
     PixelConfigOverlay2018 \

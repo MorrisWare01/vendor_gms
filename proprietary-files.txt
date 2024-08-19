@@ -216,6 +216,7 @@ product/usr/srec/en-US/voice_match/MARBLE_voice_filter.tflite
 -product/overlay/ContactsProvider__husky__auto_generated_rro_product.apk:product/overlay/PixelContactsProvider.apk
 -product/overlay/GoogleConfigOverlay.apk
 -product/overlay/GoogleDeviceLockControllerOverlay.apk
+-product/overlay/GoogleHealthConnectOverlay.apk
 -product/overlay/GoogleWebViewOverlay.apk
 -product/overlay/ManagedProvisioningPixelOverlay.apk
 -product/overlay/PixelConfigOverlay2018.apk
